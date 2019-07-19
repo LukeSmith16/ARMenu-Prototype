@@ -1,0 +1,3 @@
+Hey! Thanks for checking out this little app i made, i just wanted to make a quick note that my intention with this project was just to show off what you can do with ARKit i have no intention to release this as a full app.
+
+Decent quality 3D models (that are free) are hard to come by so the example 3D model i was using in this project isn't the best quality. If you got any questions regarding this project shoot me an email: lukeedwardsmith97@gmail.com .

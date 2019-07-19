@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SubMenuImageCollectionViewCell" id="HXI-eU-5ll" customClass="SubMenuImageCollectionViewCell" customModule="Menu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="370" height="234"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="370" height="234"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tha-9e-CfJ">
+                        <rect key="frame" x="0.0" y="0.0" width="370" height="234"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kzz-Rs-Rpk">
+                                <rect key="frame" x="0.0" y="0.0" width="370" height="234"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rAg-5i-vnO">
+                                <rect key="frame" x="0.0" y="0.0" width="370" height="234"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description of food here" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQV-Tl-YvX">
+                                        <rect key="frame" x="60" y="107" width="250" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="AQV-Tl-YvX" secondAttribute="trailing" constant="60" id="Nza-wS-CVm"/>
+                                    <constraint firstItem="AQV-Tl-YvX" firstAttribute="leading" secondItem="rAg-5i-vnO" secondAttribute="leading" constant="60" id="jRh-Kk-7JB"/>
+                                    <constraint firstItem="AQV-Tl-YvX" firstAttribute="centerY" secondItem="rAg-5i-vnO" secondAttribute="centerY" id="lLZ-9A-YFw"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CYE-sj-1zw">
+                                <rect key="frame" x="338" y="10" width="22" height="22"/>
+                                <color key="tintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <connections>
+                                    <action selector="infoTapped:" destination="HXI-eU-5ll" eventType="touchUpInside" id="Tc1-wv-NZd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLa-ak-pIR">
+                                <rect key="frame" x="338" y="52" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="HOg-BN-kdM"/>
+                                    <constraint firstAttribute="width" constant="22" id="pXt-VZ-ycW"/>
+                                </constraints>
+                                <color key="tintColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                <state key="normal" image="arIcon"/>
+                                <connections>
+                                    <action selector="arTapped:" destination="HXI-eU-5ll" eventType="touchUpInside" id="i8f-hG-f9q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="kzz-Rs-Rpk" firstAttribute="leading" secondItem="tha-9e-CfJ" secondAttribute="leading" id="4cJ-OE-3KM"/>
+                            <constraint firstItem="rAg-5i-vnO" firstAttribute="top" secondItem="tha-9e-CfJ" secondAttribute="top" id="7A3-55-PW6"/>
+                            <constraint firstAttribute="bottom" secondItem="rAg-5i-vnO" secondAttribute="bottom" id="9No-Ip-Jmj"/>
+                            <constraint firstAttribute="bottom" secondItem="kzz-Rs-Rpk" secondAttribute="bottom" id="C5J-bt-vjA"/>
+                            <constraint firstItem="CYE-sj-1zw" firstAttribute="top" secondItem="tha-9e-CfJ" secondAttribute="top" constant="10" id="FDQ-cZ-tNL"/>
+                            <constraint firstItem="kzz-Rs-Rpk" firstAttribute="top" secondItem="tha-9e-CfJ" secondAttribute="top" id="JTw-uQ-ZWu"/>
+                            <constraint firstAttribute="trailing" secondItem="WLa-ak-pIR" secondAttribute="trailing" constant="10" id="N5S-5K-wcY"/>
+                            <constraint firstItem="WLa-ak-pIR" firstAttribute="top" secondItem="CYE-sj-1zw" secondAttribute="bottom" constant="20" id="Z17-qr-ZHy"/>
+                            <constraint firstAttribute="trailing" secondItem="kzz-Rs-Rpk" secondAttribute="trailing" id="f0Z-kn-OPN"/>
+                            <constraint firstAttribute="trailing" secondItem="rAg-5i-vnO" secondAttribute="trailing" id="kVC-P5-fHw"/>
+                            <constraint firstAttribute="trailing" secondItem="CYE-sj-1zw" secondAttribute="trailing" constant="10" id="xKF-4O-QNd"/>
+                            <constraint firstItem="rAg-5i-vnO" firstAttribute="leading" secondItem="tha-9e-CfJ" secondAttribute="leading" id="xRc-UU-BR8"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="tha-9e-CfJ" secondAttribute="bottom" id="DQ9-XY-yST"/>
+                <constraint firstAttribute="trailing" secondItem="tha-9e-CfJ" secondAttribute="trailing" id="Vie-eX-9Qy"/>
+                <constraint firstItem="tha-9e-CfJ" firstAttribute="leading" secondItem="HXI-eU-5ll" secondAttribute="leading" id="hVw-Bh-DG4"/>
+                <constraint firstItem="tha-9e-CfJ" firstAttribute="top" secondItem="HXI-eU-5ll" secondAttribute="top" id="qUB-qx-bPs"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ez3-6f-iZg"/>
+            <size key="customSize" width="370" height="234"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="AQV-Tl-YvX" id="Npa-7Z-HhP"/>
+                <outlet property="descriptionView" destination="rAg-5i-vnO" id="N28-iA-fr1"/>
+                <outlet property="descriptionViewTopConstraint" destination="7A3-55-PW6" id="eo5-tD-jcc"/>
+                <outlet property="imageView" destination="kzz-Rs-Rpk" id="5Ye-CT-63m"/>
+            </connections>
+            <point key="canvasLocation" x="217.39130434782609" y="146.65178571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="arIcon" width="42" height="44"/>
+    </resources>
+</document>
