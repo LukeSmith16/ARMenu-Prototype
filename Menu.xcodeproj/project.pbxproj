@@ -119,7 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				077559FB22B59F29003FDE55 /* MenuViewController.swift */,
-				07755A0022B5A381003FDE55 /* IngredientViewControllers */,
+				07755A0122B5A3AF003FDE55 /* SubMenuViewController.swift */,
 				07755A0C22B650D5003FDE55 /* Views */,
 				077559FA22B59F13003FDE55 /* XIBs */,
 			);
@@ -162,14 +162,6 @@
 				07171AA622D2338A005EEEED /* SCNFoodModel.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		07755A0022B5A381003FDE55 /* IngredientViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				07755A0122B5A3AF003FDE55 /* SubMenuViewController.swift */,
-			);
-			path = IngredientViewControllers;
 			sourceTree = "<group>";
 		};
 		07755A0922B5AE25003FDE55 /* Extensions+Helpers */ = {

@@ -18,9 +18,9 @@ class SubMenuViewController: UIViewController {
     
     weak var delegate: ImagesViewControllerDelegate?
     
-    fileprivate let foods: [Food]
+    private let foods: [Food]
     
-    fileprivate lazy var collectionViewLayout: UICollectionViewFlowLayout = {
+    private lazy var collectionViewLayout: UICollectionViewFlowLayout = {
         let layout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 18, left: 0, bottom: 18, right: 0)
         layout.minimumLineSpacing = 15
