@@ -110,7 +110,7 @@ private extension MenuViewController {
     }
     
     func setupSceneView() {
-        currentFoodNode = SCNFoodModel.pie // Only supports a single 
+        currentFoodNode = SCNFoodModel.pie
         sceneView.delegate = self
     }
     
