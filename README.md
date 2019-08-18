@@ -1,5 +1,5 @@
 # ARMenu-Prototype
-A cool little prototype which restaurants could use so customers can see and order items using this AR menu.
+A cool little prototype which restaurants could use so customers can see and order items using this AR menu. Only features one 3D model which is the pie at the moment.
 
 <img src="https://github.com/LukeSmith1997/ARMenu-Prototype/blob/master/screenShot1.png" width="350" height="752"><img src="https://github.com/LukeSmith1997/ARMenu-Prototype/blob/master/screenShot2.png" width="350" height="752">
 
